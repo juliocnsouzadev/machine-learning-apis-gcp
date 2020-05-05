@@ -1,0 +1,100 @@
+{
+  "id": "61a607e5-54bd-45e6-98e0-34d6774ce6a3",
+  "name": "Submit Ticket - collect name",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "SubmitTicket-followup"
+  ],
+  "contexts": [
+    "SubmitTicket-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "81f62ed2-fc6e-46a9-98cd-a17fb90925ed",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "SubmitTicket.SubmitTicket-custom",
+      "affectedContexts": [
+        {
+          "name": "SubmitTicket-collectname-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "person",
+          "dataType": "@sys.person",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$person",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Thanks $person! Please describe you issue."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "81f62ed2-fc6e-46a9-98cd-a17fb90925ed",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "i am ",
+          "userDefined": false
+        },
+        {
+          "text": "bob",
+          "userDefined": false,
+          "alias": "person",
+          "meta": "@sys.person"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "my name is ",
+          "userDefined": false
+        },
+        {
+          "text": "Julia",
+          "userDefined": false,
+          "alias": "person",
+          "meta": "@sys.person"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}
