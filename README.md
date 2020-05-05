@@ -1,0 +1,2 @@
+# machine-learning-apis-gcp
+It’s no secret that machine learning is one of the fastest growing fields in tech, and the Google Cloud Platform has been instrumental in furthering it’s development. With a host of APIs, GCP has a tool for just about any machine learning job. In this advanced-level quest, you will get hands-on practice with machine learning APIs by taking labs like Implementing an AI Chatbot with Dialogflow and Detect Labels, Faces, and Landmarks in Images with the Cloud Vision API.
