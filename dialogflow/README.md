@@ -21,15 +21,15 @@ Entities are powerful tools used for extracting parameter values from natural la
 The entities used in a particular agent will depend on the parameter values that are expected to be returned as a result of the agent functioning. In other words, a developer does not need to create entities for every possible concept mentioned in the agent – only for those needed for actionable data.
 
 There are 3 types of entities:
+- System: defined by Dialogflow
+- Developer: defined by a developer
+- User: built for each individual end-user in every request
 
-System: defined by Dialogflow
-Developer: defined by a developer
-User: built for each individual end-user in every request
 It's important to distinguish between the three different types of system entities:
+- System mapping: Has reference values
+- System enum: Has no reference values
+- System composite: Contains other entities with aliases and returns object type values
 
-System mapping: Has reference values
-System enum: Has no reference values
-System composite: Contains other entities with aliases and returns object type values
 Contexts represent the current context of a user's request. This is helpful for differentiating phrases which may be vague or have different meanings depending on the user's preferences, geographic location, the current page in an app, or the topic of conversation.
 
 For example, if a user is listening to music and finds a band that catches their interest, they might say something like: "I want to hear more of them." As a developer, you can include the name of the band in the context with the request, so that the agent can use it in other intents.
